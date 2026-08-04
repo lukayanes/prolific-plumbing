@@ -63,3 +63,15 @@ if (yr) yr.textContent = new Date().getFullYear();
     });
   });
 })();
+
+// Rising bubbles — livelier while scrolling
+(function(){
+  var b = document.getElementById('bubbles');
+  if (!b) return;
+  var t;
+  window.addEventListener('scroll', function(){
+    b.classList.add('active');
+    clearTimeout(t);
+    t = setTimeout(function(){ b.classList.remove('active'); }, 900);
+  }, { passive: true });
+})();
