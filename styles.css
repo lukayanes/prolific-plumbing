@@ -397,3 +397,9 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
   font-size: 16px; color: #fff; background: rgba(255,255,255,.12);
   border: 1px solid rgba(255,255,255,.3); border-radius: 999px; padding: 9px 20px;
 }
+
+/* ---------- Floating Google 5-star badge (site-wide) ---------- */
+.review-badge{ position: fixed; left: 18px; bottom: 18px; z-index: 95; max-width: 260px; filter: drop-shadow(0 10px 24px rgba(42,22,45,.28)); }
+.review-badge .elfsight-app-eb6bfa7c-566d-4902-8158-1d6041530c03{ min-width: 180px; }
+@media (max-width: 760px){ .review-badge{ left: 10px; bottom: 10px; transform: scale(.82); transform-origin: bottom left; } }
+@media print{ .review-badge{ display: none; } }

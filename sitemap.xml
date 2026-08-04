@@ -1,68 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- CORE PAGES -->
-  <url>
-    <loc>https://callprolific.com/</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/about.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/contact.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/reviews.html</loc>
-  </url>
-
-  <!-- SERVICE PAGES -->
-  <url>
-    <loc>https://callprolific.com/services/bathroom-plumbing.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/drain-cleaning.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/faucet-leak-repair.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/gas-line-services.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/hydro-jetting.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/residential-plumbing.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/water-filtration.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/services/water-heater-repair.html</loc>
-  </url>
-
-  <!-- LEGAL -->
-  <url>
-    <loc>https://callprolific.com/privacy.html</loc>
-  </url>
-
-  <url>
-    <loc>https://callprolific.com/terms.html</loc>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://callprolific.com/</loc><lastmod>2026-08-04</lastmod><priority>1.0</priority></url>
+  <url><loc>https://callprolific.com/about/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/reviews/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/faq/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/contact/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/privacy/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/terms/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/hydro-jetting/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/residential-plumbing/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/bathroom-plumbing/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/drain-cleaning/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/faucet-leak-repair/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/gas-line-services/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/water-filtration/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://callprolific.com/services/water-heater-repair/</loc><lastmod>2026-08-04</lastmod><priority>0.7</priority></url>
 </urlset>
