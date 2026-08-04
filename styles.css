@@ -259,7 +259,7 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
 .field input:focus, .field textarea:focus{ outline: none; border-color: var(--magenta); }
 .form-note{ font-size: 12.5px; color: var(--muted); margin-top: 12px; }
 .quote-thanks{ text-align: center; padding: 24px 0; }
-.quote-phone{ display:inline-block; margin-top: 18px; font-family: var(--display); font-weight: 800; font-size: 30px; color: var(--gold); letter-spacing: .02em; }
+.quote-phone{ display:inline-block; margin-top: 18px; font-family: var(--display); font-weight: 800; font-size: 30px; color: var(--magenta); letter-spacing: .02em; }
 
 /* ---------- Footer ---------- */
 .footer{ background: var(--purple-deep); color: #fff; padding: clamp(60px,8vw,100px) 0 40px; }
@@ -303,12 +303,13 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
   .cta-grid{ grid-template-columns: 1fr; }
   .form-grid{ grid-template-columns: 1fr; }
   .footer-grid{ grid-template-columns: 1fr 1fr; gap: 32px; }
-  .hero-mascot{ opacity: .28; right: -30px; }
+  .hero-mascot{ height: min(40vh, 300px); right: -26px; bottom: 14px; opacity: .3; }
   .hero-badge{ display: none; }
 }
-@media (max-width: 520px){
+@media (max-width: 560px){
   .footer-grid{ grid-template-columns: 1fr; }
   .trust-grid{ grid-template-columns: 1fr 1fr; }
+  .hero-mascot{ display: none; }   /* keep the mobile hero clean */
 }
 
 /* ---------- Inner page hero ---------- */
@@ -403,3 +404,30 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
 .review-badge .elfsight-app-eb6bfa7c-566d-4902-8158-1d6041530c03{ min-width: 180px; }
 @media (max-width: 760px){ .review-badge{ left: 10px; bottom: 10px; transform: scale(.82); transform-origin: bottom left; } }
 @media print{ .review-badge{ display: none; } }
+
+/* ---------- Manufacturer / brand logo strip ---------- */
+.brand-logos{ display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:clamp(26px,6vw,72px); margin-top:44px; }
+.brand-logos a{ display:inline-flex; }
+.brand-logos img{ height:clamp(34px,4.4vw,56px); width:auto; opacity:.6; filter:grayscale(1); transition:opacity .25s ease, filter .25s ease; }
+.brand-logos a:hover img{ opacity:1; filter:none; }
+/* homepage van band */
+.van-band img{ max-width:860px; width:100%; margin:26px auto 0; display:block; }
+
+/* ---------- Rising bubbles (homepage ambiance, scroll-reactive) ---------- */
+.bubbles{ position:fixed; inset:0; z-index:3; pointer-events:none; overflow:hidden; opacity:.5; transition:opacity .5s ease; }
+.bubbles.active{ opacity:1; }
+.bubbles i{
+  position:absolute; bottom:-8vh; border-radius:50%;
+  background:radial-gradient(circle at 34% 30%, rgba(255,255,255,.72), rgba(255,255,255,.12) 58%, rgba(197,41,155,.06) 100%);
+  box-shadow:inset 0 1px 4px rgba(255,255,255,.6), 0 0 10px rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.28);
+  animation:bubble-rise linear infinite; will-change:transform,opacity;
+}
+@keyframes bubble-rise{
+  0%{ transform:translate3d(0,0,0) scale(.8); opacity:0; }
+  8%{ opacity:.9; }
+  50%{ transform:translate3d(16px,-58vh,0) scale(1); }
+  92%{ opacity:.7; }
+  100%{ transform:translate3d(-12px,-116vh,0) scale(1.08); opacity:0; }
+}
+@media (prefers-reduced-motion: reduce){ .bubbles{ display:none; } }
