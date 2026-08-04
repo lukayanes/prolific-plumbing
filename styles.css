@@ -379,3 +379,21 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
 .mm-head{ margin-top: 6px; }
 .mobile-menu .mm-sub a{ font-size: 19px; font-weight: 700; padding: 8px 0 8px 18px; color: rgba(255,255,255,.82); }
 .mobile-menu .mm-sub a:hover{ color:#fff; }
+
+/* ---------- Service-area band (Sarasota hero) ---------- */
+.area{
+  position: relative; color: #fff; text-align: center;
+  padding: clamp(80px,10vw,150px) 0;
+  background: linear-gradient(180deg, rgba(75,48,72,.86), rgba(42,22,45,.82)), url("./assets/Sarasota_Hero.webp") center/cover no-repeat;
+  background-attachment: scroll;
+}
+.area .wrap{ position: relative; z-index: 1; }
+.area .eyebrow{ color: var(--gold); }
+.area h2{ color: var(--cream); text-shadow: 3px 4px 0 rgba(42,22,45,.5); }
+.area .lead{ color: rgba(255,255,255,.9); max-width: 640px; margin: 16px auto 0; }
+.area-tags{ list-style: none; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; padding: 0; margin: 28px auto 32px; max-width: 780px; }
+.area-tags li{
+  font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  font-size: 16px; color: #fff; background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3); border-radius: 999px; padding: 9px 20px;
+}
