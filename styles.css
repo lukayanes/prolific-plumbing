@@ -431,3 +431,14 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
   100%{ transform:translate3d(-12px,-116vh,0) scale(1.08); opacity:0; }
 }
 @media (prefers-reduced-motion: reduce){ .bubbles{ display:none; } }
+
+/* ---------- Responsive 3-up helper (fixes forced grids on mobile) ---------- */
+.grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:40px; }
+@media (max-width:860px){ .grid-3{ grid-template-columns:1fr; gap:34px; } }
+/* make sure svc-grid always collapses on mobile even if an inline 3-col slipped in */
+@media (max-width:1000px){ .svc-grid{ grid-template-columns:repeat(2,1fr) !important; } }
+@media (max-width:760px){ .svc-grid{ grid-template-columns:1fr !important; } }
+
+/* ---------- Brand slogan ---------- */
+.slogan{ font-family:var(--script); color:var(--gold); line-height:1; }
+.footer-slogan{ font-family:var(--script); font-size:30px; color:var(--gold); margin:4px 0 14px; }
