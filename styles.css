@@ -321,6 +321,23 @@ section{ padding: clamp(64px, 8vw, 120px) 0; position: relative; }
   .trust-grid{ grid-template-columns: 1fr 1fr; }
   .hero-mascot{ display: none; }   /* keep the mobile hero clean */
 }
+/* Mobile: lift the hero badge into the top-right corner so it clears the eyebrow text */
+@media (max-width: 760px){
+  .hero{
+    background:
+      url("./assets/prolific-badge.webp") right 14px top 10px / 92px auto no-repeat,
+      linear-gradient(180deg, rgba(74,26,90,.45) 0%, rgba(74,26,90,0) 42%),
+      url("./assets/hero-bg.webp") center bottom / cover no-repeat,
+      #6d2077;
+  }
+  .page-hero{
+    background:
+      url("./assets/prolific-badge.webp") right 12px top 8px / 82px auto no-repeat,
+      linear-gradient(180deg, rgba(74,26,90,.5) 0%, rgba(74,26,90,0) 46%),
+      url("./assets/hero-bg.webp") center bottom / cover no-repeat,
+      #6d2077;
+  }
+}
 
 /* ---------- Inner page hero ---------- */
 .page-hero{ color:#fff; padding: clamp(90px,12vw,150px) 0 clamp(84px,10vw,132px); position:relative; overflow:hidden;
